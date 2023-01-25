@@ -1,0 +1,5 @@
+{
+    "ArkServerPath": ".\\Server\\LocalArknights",
+    "JavaPath": "\\jre\\bin",
+    "MySQLPath": ".\\Server\\mysql"
+}

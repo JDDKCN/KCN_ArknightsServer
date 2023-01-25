@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82D77C01-8C8C-41BF-B163-1427F730446E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>ArknightsServer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>GUI\Code\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\favicon %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\KCNAPI\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\Code\Class2.cs" />
+    <Compile Include="GUI\Code\Command.cs" />
+    <Compile Include="GUI\Form\Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Code\RichEdit50.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Code\INI.cs" />
+    <Compile Include="GUI\Code\Msg.cs" />
+    <Compile Include="GUI\Form\MsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\MsgForm.Designer.cs">
+      <DependentUpon>MsgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Code\Program.cs" />
+    <Compile Include="GUI\Code\Logger.cs" />
+    <Compile Include="GUI\UserControl\UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControl\UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControl\UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControl\UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\Form\TextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\TextEditor.Designer.cs">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControl\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControl\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\Form\Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\MsgForm.resx">
+      <DependentUpon>MsgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControl\UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControl\UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControl\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GUI\Code\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUI\Code\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\返回.png" />
+    <None Include="Resources\高级选项.png" />
+    <None Include="Resources\关于程序.png" />
+    <None Include="Resources\常规设置.png" />
+    <None Include="Resources\setup-12.png" />
+    <None Include="Resources\setup-11.png" />
+    <None Include="Resources\启动服务端.png" />
+    <None Include="Resources\启动数据库.png" />
+    <None Include="Resources\title.png" />
+    <None Include="Resources\一键结束服务-按钮.png" />
+    <None Include="Resources\setup-4.png" />
+    <None Include="Resources\一键启动服务-按钮.png" />
+    <None Include="Resources\small-1.png" />
+    <None Include="Resources\close-2.png" />
+    <None Include="Resources\close-3.png" />
+    <None Include="Resources\ABOUT2.png" />
+    <None Include="Resources\DKZY2.png" />
+    <Content Include="Resources\favicon %281%29.ico" />
+    <None Include="Resources\No1.png" />
+    <None Include="Resources\Yes1.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\Programmer.targetsize-64_contrast-white.png" />
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
