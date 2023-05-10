@@ -1,5 +1,6 @@
 # KCN_ArknightsServer
- 一个Ark服务端 - GUI一键端。
+![Github](https://socialify.git.ci/JDDKCN/KCN_ArknightsServer/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com/u/103011451?v=4&name=1&owner=1&pulls=1&stargazers=1&theme=Light)
+> 一个Ark服务端 - GUI一键端。
 ## F&Q
 
 - Q:我该填什么IP?
